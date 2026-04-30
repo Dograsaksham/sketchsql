@@ -63,6 +63,7 @@ export default function AiAssistantTab() {
       setPrompt('');
       setActiveTab('sql');
     } catch (e) {
+      console.error(e.message);
       toast.error('AI unavailable, please try again');
     } finally {
       setLoading(false);
