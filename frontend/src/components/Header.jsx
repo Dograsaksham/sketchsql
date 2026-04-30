@@ -84,9 +84,9 @@ export default function Header() {
         <button className="header-action-btn" onClick={openSaveDiagramModal} data-testid="save-btn">
           <Save size={13} /> Save
         </button>
-        <button className="header-action-btn" onClick={openShareModal} data-testid="share-btn" title="Create a public shareable link">
+        {/* <button className="header-action-btn" onClick={openShareModal} data-testid="share-btn" title="Create a public shareable link">
           <Share2 size={13} /> Share
-        </button>
+        </button> */}
         <div className="export-wrap">
           <button className="header-action-btn" onClick={() => setExportOpen(!exportOpen)} data-testid="export-btn">
             <Download size={13} /> Export <ChevronDown size={11} />
